@@ -1,0 +1,62 @@
+
+*{
+  margin: 0;
+}
+
+#circle{
+  background-color: cyan;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.651);
+}
+
+#demo{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+#fire{
+  background-color: rgb(226, 110, 57);
+  width:100px;
+  height: 100px;
+}
+#water{
+  background-color: rgb(29, 97, 187);
+  width:100px;
+  height: 100px;
+}
+
+#air{
+  background-color: rgb(178, 166, 185);
+  width:100px;
+  height: 100px;
+}
+
+#earth{
+  background-color: rgb(37, 107, 54);
+  width:100px;
+  height: 100px;
+}
+
+.element{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.473) 3px 4px 5px;
+}
+
+
+#container {
+  background-color: blueviolet;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+}
