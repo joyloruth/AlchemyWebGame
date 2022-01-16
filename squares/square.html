@@ -7,21 +7,31 @@
   <title>Squares</title>
 <link rel = "stylesheet" href = "square.css">
 </head>
-<body onload="move('element')">
-  <div id="container">
-    <!-- <div id="element" class = "one"></div>
-    <div id="circle" class = "two"></div>
-    <div id="circle" class = "three"></div> -->
+<body onload="move('element'); moveMixture('mixture')">
   
-  <div class="element" id = fire></div>
-  <div class="element" id = "water"></div>
-  <div class="element" id = "air"></div>
-  <div class="element" id = "earth"></div>
-  </div>
-  
-  
+  <div id="playGround">
+    <div id="container">
+    
+    
+    <div class="element" id = fire>fire</div>
+    <div class="element" id = "water">water</div>
+    <div class="element" id = "air">air</div>
+    <div class="element" id = "earth">earth</div>
+    
+    <!--mixtures-->
+    <div class="mixture" id = "smoke">smoke</div>
+    <div class="mixture" id = "mud">mud</div>
+    <div class="mixture" id = "steam">steam</div>
+    <div class="mixture" id = "lava">lava</div>
+    <div class="mixture" id = "brick">brick</div>
 
-  <div id="demo"></div>
+    </div>
+
+    <div id="mixContainer"></div>
+  
+</div>
+
+
 
   <script src = "square.js"></script>
 </body>
