@@ -1,67 +1,129 @@
-//element array
-let elements = ["/images/water.png", "/images/fire.png", "/images/air.png", "/images/earth.png"];
-let elementList = document.getElementById("elementList");
 
-//iterating through element array and creating img elements and appending to element list
-elements.forEach((element)=>{
-  let elementId = document.createElement("IMG");
-  elementId.setAttribute("src", element);
-  elementId.setAttribute("width", 50);
-  elementId.setAttribute("height", 55);
-  elementId.setAttribute("draggable", true);
-  elementId.style.cursor = "pointer";
 
-  var elementCopy;
-  //start dragging elements
-  elementId.addEventListener("dragstart", () =>{
-    let mixture = document.getElementById("mixtureContainer");
-    elementCopy = document.createElement("IMG");
-    elementCopy.setAttribute("src", element);
-    elementCopy.setAttribute("width", 50);
-    elementCopy.setAttribute("height", 55);
-    elementCopy.setAttribute("draggable", true);
-    elementCopy.style.position = "absolute";
-    elementCopy.style.cursor = "pointer";
-    elementCopy.style.margin = "10px";
-    elementCopy.style.right = "90px";
-    mixture.appendChild(elementCopy);
+var chooseElement;
+var chooseMixture;
+
+const move = function(element){
+  const elements = document.querySelectorAll(".element");
+ 
+  elements.forEach(element => {
+    element.addEventListener("mousedown", () => {
+      element.style.position = "absolute";
+      chooseElement = element;
+
+      document.onmousemove = (e) => {
+        var x = e.pageX;
+        var y = e.pageY;
+
+        chooseElement.style.left = x + "px";
+        chooseElement.style.top  = y + "px";
+         
+        
+
+        
+        //create steam when water and fire are combined
+        if (fire.style.top === water.style.top || fire.style.left === water.style.left){
+          let steam = document.getElementById("steam");
+          steam.style.display = "flex";
+          let contain = document.getElementById("container");
+          contain.appendChild(steam);
+          contain.style.position ="absolute";
+          let alert = document.createElement('div');
+          
+          alert.innerHTML = "steam found";
+          
+          alert.setAttribute('class', 'alertNote');
+          contain.appendChild(alert);
+
+        } else if (fire.style.top === earth.style.top || fire.style.left === earth.style.left ){
+          let lava = document.getElementById("lava");
+          lava.style.display = "flex";
+          let contain = document.getElementById("container");
+          contain.appendChild(lava);
+          contain.style.position ="absolute";
+        } else if(earth.style.top === water.style.top || earth.style.left === water.style.left){
+          let mud = document.getElementById("mud");
+          mud.style.display = "flex";
+          let contain = document.getElementById("container");
+          contain.appendChild(mud);
+          contain.style.position ="absolute";
+        } else if(fire.style.top === air.style.top || fire.style.left === air.style.left){
+          let smoke = document.getElementById("smoke");
+          smoke.style.display = "flex";
+          let contain = document.getElementById("container");
+          contain.appendChild(smoke);
+          contain.style.position ="absolute";
+        } else if(mud.style.top === fire.style.top || mud.style.left === fire.style.left){
+          let brick = document.getElementById("brick");
+          brick.style.display = "flex";
+          let contain = document.getElementById("container");
+          contain.appendChild(brick);
+          contain.style.position ="absolute";
+        } else{
+        console.log("nothing");
+      }
+        
+      }
+    })
   })
-  
-  //append array elements to list div 
-  elementList.appendChild(elementId);
-  
-})
 
+    document.onmouseup = function(e){
+      chooseElement=null;
+    }
+}
 
-let colors = ["red", "blue", "yellow"];
+const moveMixture = function(mixture){
+  const mixtures = document.querySelectorAll(".mixture");
+ 
+  mixtures.forEach(mixture => {
+    mixture.addEventListener("mousedown", () => {
+      mixture.style.position = "absolute";
+      chooseMixture = mixture;
 
-colors.forEach((color)=>{
-  let name = document.createElement("p");
-  name.innerText = color;
-  elementList.appendChild(name);
-  name.setAttribute("draggable", true);
-  name.style.cursor = "pointer";
-})
+      document.onmousemove = (e) => {
+        var x = e.pageX;
+        var y = e.pageY;
 
-var dragValue;
+        chooseMixture.style.left = x + "px";
+        chooseMixture.style.top  = y + "px";
+      }
+    })
+  })
 
-function move(id){
-  var circle = document.getElementById("ball");
-  circle.style.position = "absolute";
-  circle.onmousedown = function(){
-    dragValue = circle;
+  document.onmouseup = function(e){
+    chooseMixture=null;
+    chooseElement=null;
   }
 }
 
-document.onmouseup = function(e){
-  dragValue = null;
-}
 
-document.onmousemove = function(e){
-  var x = e.pageX;
-  var y = e.pageY;
 
-  dragValue.style.left = x + "px";
-  dragValue.style.top = y + "px";
-}
+  function exit(){
+    alert.style.display ="none";
+  }
 
+
+  // let lava = document.createElement('div');
+          // lava.setAttribute('class', 'element');
+          // lava.style.backgroundColor = "red";
+          // lava.style.width = 300;
+          // lava.style.height = 300;
+          // lava.innerHTML = "lava";
+          // let contain = document.getElementById("container");
+          
+          // contain.appendChild(lava);
+          // contain.style.position ="absolute";
+
+
+ //  if(fire.left > water.left + water.width ||
+ //     fire.left + fire.width < water.left  ||
+ //     fire.top > water.top + water.height||
+ //     fire.top + fire.height < water.top
+ //     ){
+ //       console.log("combined");
+        //  }
+      
+        //  else{
+        //    console.log("not combined" + " " + element);
+      
+        //  }

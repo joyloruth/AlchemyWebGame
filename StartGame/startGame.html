@@ -4,30 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel = "stylesheet" href = "startGame.css">
-  
   <title>Alchemy</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+<link rel = "stylesheet" href = "startGame.css">
 </head>
-<body onload = "move('ball')">
+<body onload="move('element'); moveMixture('mixture')">
+  
+  <div id="playGround">
+    <div id="container">
+    
+    
+    <div class="element" id = fire>fire</div>
+    <div class="element" id = "water">water</div>
+    <div class="element" id = "air">air</div>
+    <div class="element" id = "earth">earth</div>
+    
+    <!--mixtures-->
+    <div class="mixture" id = "smoke">smoke</div>
+    <div class="mixture" id = "mud">mud</div>
+    <div class="mixture" id = "steam">steam</div>
+    <div class="mixture" id = "lava">lava</div>
+    <div class="mixture" id = "brick">brick</div>
 
-  <div id="demo">
-    <div id="ball"></div>
-    <div class="person" ></div>
-    <div class="person" ></div>
-    <div id="person" ></div>
-    <div id="person" ></div>
-  </div>
- 
-  <div id="gameBoard">
-    <div id="elementList">
-      <div id="elementCopy"></div>
     </div>
-    <div id="mixtureContainer">
-      <div id="settingsContainer"></div>
-    </div>
-  </div>
+
+    <div id="mixContainer"></div>
+  
 </div>
- <script src="startGame.js"></script>
+
+
+
+  <script src = "startGame.js"></script>
 </body>
 </html>
