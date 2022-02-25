@@ -27,7 +27,7 @@
   font-size:larger;
   font-weight: 600;
   box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
-  border: #27252942 solid 1px;
+  border: #272529bd solid 1px;
   color: #2F4858;
 }
 
@@ -39,19 +39,48 @@
   width: 125px;
   height: 100%;
   box-shadow: #2F4858 3px 3px 3px;
-  
+  border: #191a18 1px solid;
 }
 
 #hintButton{
   width: 75px;
   height: 75px;
   top: 20px;
-  background-color: #e4ece99a;
+  background-color: #00B195;
   border: none;
-  box-shadow: #2F4858 1px 0px 3px;
+  box-shadow: #2F4858 0px 3px 3px;
   border-radius: 3px;
   font-family: amatic sc;
-  font-size: large;
+  font-size: 30px;
+  opacity: 80%;
+  color: #191a18;
+  box-shadow: rgba(35, 82, 82, 0.733) 0px 5px 0px;
+  border: #1a28319f 1px solid;
+}
+
+#hintButton:hover{
+  box-shadow: #1a2831 0px 3px 2px;
+  transition: all .5s ease-in-out ;
+  color: #121311;
+  padding: 2px;
+  font-weight: 800;
+  background-color: #168070;
+  zoom: 105%;
+}
+
+#rulesButton{
+  width: 75px;
+  height: 75px;
+  top: 20px;
+  background-color: #BAE611;
+  border-radius: 3px;
+  font-family: amatic sc;
+  font-size: 30px;
+  opacity: 80%;
+  color: #191a18;
+  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
+  border: #1a28319f 1px solid;
+  margin: 25px;
 }
 
 #hintSpace{
@@ -64,6 +93,9 @@
   align-items: center;
   justify-content: center;
   box-shadow: #201f1f 3px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  border: #201f1f 1px solid;
 }
 
 .mixture{
@@ -89,7 +121,57 @@
   font-size: large;
 }
 
+#hintPage{
+  background-color: #e1e8ec;
+  width: 450px;
+  height: auto;
+  box-shadow: #191a184b 3px 3px 3px;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: amatic sc;
+  flex-direction: column;
+  position: absolute;
+  top:25%;
+  left: 25%;
+  right: 25;
+  border: #191a18 1px solid;
+  padding: 10px;
+}
+#hintPage p{
+  font-family: poppins;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
 
+#exitHintButton{
+  border-radius: 5px;
+  border: #191a18 1px solid;
+  font-family: amatic sc;
+  background-color: #b1f05f;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: 800;
+  font-size: large;
+}
+
+#exitHintButton:hover{
+  zoom:105%;
+  background-color: #00D270;
+}
+
+#hintList{
+  display: flex;
+  flex-direction: column;
+}
+
+#hintIcon{
+  width:50px;
+  height: 50px;
+}
 
 
 /* primary elements */
@@ -170,6 +252,10 @@
   flex-direction: row;
   height: 100vh;
   width: 100%;
+  background-image: url("images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
 } 
 
 @keyframes pop {

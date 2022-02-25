@@ -103,5 +103,15 @@ const moveMixture = function(mixture){
 
 let hintButton = document.querySelector("#hintButton");
 hintButton.addEventListener("click", function(){
- cre
+  let hintPage = document.getElementById("hintPage");
+  hintPage.style.display = "flex";
+ 
+});
+
+
+let exitHintButton = document.querySelector("#exitHintButton");
+exitHintButton.addEventListener("click", function(){
+  let hintPage = document.getElementById("hintPage");
+  hintPage.style.display = "none";
+ 
 });
