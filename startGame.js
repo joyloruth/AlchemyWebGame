@@ -115,3 +115,19 @@ exitHintButton.addEventListener("click", function(){
   hintPage.style.display = "none";
  
 });
+
+let rulesButton = document.querySelector("#rulesButton");
+rulesButton.addEventListener("click", function(){
+  let rulesPage = document.getElementById("rulesPage");
+  rulesPage.style.display = "flex";
+  
+
+ 
+});
+
+let exitRulesButton = document.querySelector("#exitRulesButton");
+exitRulesButton.addEventListener("click", function(){
+  let rulesPage = document.getElementById("rulesPage");
+  rulesPage.style.display = "none";
+ 
+});
