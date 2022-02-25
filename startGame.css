@@ -67,7 +67,7 @@
 
 /* primary elements */
 #earth{
-  background-image: url("/images/earth.png");
+  background-image: url("images/earth.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -92,7 +92,7 @@
 }
 
 #water{
-  background-image: url("/images/water.png");
+  background-image: url("images/water.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -101,7 +101,7 @@
 
 /* secondary elements */
 #lava{
-  background-image: url("/images/lava.png");
+  background-image: url("images/lava.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
