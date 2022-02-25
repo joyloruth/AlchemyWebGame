@@ -113,21 +113,21 @@ let exitHintButton = document.querySelector("#exitHintButton");
 exitHintButton.addEventListener("click", function(){
   let hintPage = document.getElementById("hintPage");
   hintPage.style.display = "none";
- 
 });
 
 let rulesButton = document.querySelector("#rulesButton");
 rulesButton.addEventListener("click", function(){
   let rulesPage = document.getElementById("rulesPage");
   rulesPage.style.display = "flex";
-  
-
- 
 });
 
 let exitRulesButton = document.querySelector("#exitRulesButton");
 exitRulesButton.addEventListener("click", function(){
   let rulesPage = document.getElementById("rulesPage");
   rulesPage.style.display = "none";
- 
+});
+
+let resetButton = document.querySelector("#resetButton");
+resetButton.addEventListener("click", function(){
+  location.reload();
 });

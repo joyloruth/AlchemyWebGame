@@ -78,6 +78,24 @@
   margin: 25px;
 }
 
+#resetButton{
+  width: 75px;
+  height: 75px;
+  top: 20px;
+  background-color: #74aa40;
+  border-radius: 3px;
+  font-family: amatic sc;
+  font-size: 30px;
+  opacity: 80%;
+  color: #191a18;
+  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
+  border: #1a28319f 1px solid;
+  margin: 25px;
+}
+#resetButton:hover{
+  zoom:105%;
+  background-color: #00D270;
+}
 #hintSpace{
   background-image: linear-gradient( #b8f842, rgb(176, 241, 90));
   height: 100%;
