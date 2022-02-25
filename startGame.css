@@ -76,7 +76,7 @@
 }
 
 #air{
-  background-image: url("/images/air.png");
+  background-image: url("images/air.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -84,7 +84,7 @@
 }
 
 #fire{
-  background-image: url("/images/fire.png");
+  background-image: url("images/fire.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -109,12 +109,12 @@
 }
 
 #mud{
-  background-image: url("/images/mud.png");
+  background-image: url("images/mud.png");
   
 }
 
 #steam{
-  background-image: url("/images/steam.png");
+  background-image: url("images/steam.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -122,7 +122,7 @@
 }
 
 #smoke{
-  background-image: url("/images/smoke.png");
+  background-image: url("images/smoke.png");
   background-color: rgba(255, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: 60px;
@@ -130,7 +130,7 @@
 }
 
 #brick{
-  background-image: url("/images/brick.png");
+  background-image: url("images/brick.png");
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
