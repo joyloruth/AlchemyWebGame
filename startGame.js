@@ -24,18 +24,21 @@ const move = function(element){
           steamy.style.opacity = 100;
           container.appendChild(steamy);
           container.style.position ="absolute";
+          alert("you found steam");
         }
         if(fire.style.top == air.style.top || fire.style.left == air.style.left){
           let smoke = document.getElementById("smoke");
           smoke.style.opacity = 100;
           container.appendChild(smoke);
           container.style.position ="absolute";
+          alert("you found smoke");
         }
         if(water.style.top == earth.style.top || earth.style.left == water.style.left){
           let mud = document.getElementById("mud");
           mud.style.opacity = 100;
           container.appendChild(mud);
           container.style.position ="absolute";
+          
         }
         if(mud.style.top == fire.style.top || mud.style.left ==fire.style.left){
           let brick = document.getElementById("brick");
@@ -131,3 +134,4 @@ let resetButton = document.querySelector("#resetButton");
 resetButton.addEventListener("click", function(){
   location.reload();
 });
+
