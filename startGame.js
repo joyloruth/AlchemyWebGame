@@ -1,6 +1,6 @@
 let chooseElement;
 let chooseMixture;
-let container = document.getElementById("container");
+let container = document.getElementById("elementSpace");
 
 
 const move = function(element){
@@ -48,7 +48,7 @@ const move = function(element){
           lava.style.opacity = 100;
           container.appendChild(lava);
           container.style.position ="absolute";
-          }
+        }
 
         
       }
@@ -62,21 +62,6 @@ const move = function(element){
 
 
 
-
-
-
-  // function smoking(element){
-  //   if(fire.style.top === air.style.top || fire.style.left === air.style.left){
-  //       let smoke = document.getElementById("smoke");
-  //       smoke.style.display = "flex";
-        
-  //       contain.appendChild(smoke);
-  //       contain.style.position ="absolute";
-  //     } 
-      
-  //  
-  //   }
-  
   
 
 
@@ -115,3 +100,8 @@ const moveMixture = function(mixture){
   }
 }
 
+
+let hintButton = document.querySelector("#hintButton");
+hintButton.addEventListener("click", function(){
+ cre
+});
