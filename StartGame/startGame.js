@@ -1,14 +1,15 @@
+let chooseElement;
+let chooseMixture;
+let container = document.getElementById("container");
 
-
-var chooseElement;
-var chooseMixture;
 
 const move = function(element){
-  const elements = document.querySelectorAll(".element");
+  const elements = document.querySelectorAll(".primaryElement");
  
   elements.forEach(element => {
     element.addEventListener("mousedown", () => {
       element.style.position = "absolute";
+      
       chooseElement = element;
 
       document.onmousemove = (e) => {
@@ -18,27 +19,37 @@ const move = function(element){
         chooseElement.style.left = x + "px";
         chooseElement.style.top  = y + "px";
 
-
-        waterMix();
-        earthMix();
-        
-        /*
-        
-        }/* if(fire.style.top === air.style.top || fire.style.left === air.style.left){
+        if(fire.style.top == water.style.top || fire.style.left == water.style.left){
+          let steamy = document.getElementById("steam");
+          steamy.style.opacity = 100;
+          container.appendChild(steamy);
+          container.style.position ="absolute";
+        }
+        if(fire.style.top == air.style.top || fire.style.left == air.style.left){
           let smoke = document.getElementById("smoke");
-          smoke.style.display = "flex";
-          let contain = document.getElementById("container");
-          contain.appendChild(smoke);
-          contain.style.position ="absolute";
-        } if(mud.style.top === fire.style.top || mud.style.left === fire.style.left){
+          smoke.style.opacity = 100;
+          container.appendChild(smoke);
+          container.style.position ="absolute";
+        }
+        if(water.style.top == earth.style.top || earth.style.left == water.style.left){
+          let mud = document.getElementById("mud");
+          mud.style.opacity = 100;
+          container.appendChild(mud);
+          container.style.position ="absolute";
+        }
+        if(mud.style.top == fire.style.top || mud.style.left ==fire.style.left){
           let brick = document.getElementById("brick");
-          brick.style.display = "flex";
-          let contain = document.getElementById("container");
-          contain.appendChild(brick);
-          contain.style.position ="absolute";
-        } else{
-        console.log("nothing");
-      }*/
+          brick.style.opacity = 100;
+          container.appendChild(brick);
+          container.style.position ="absolute";
+        }
+        if(fire.style.top === earth.style.top || fire.style.left === earth.style.left ){
+          let lava = document.getElementById("lava");
+          lava.style.opacity = 100;
+          container.appendChild(lava);
+          container.style.position ="absolute";
+          }
+
         
       }
     })
@@ -49,6 +60,37 @@ const move = function(element){
     }
 }
 
+
+
+
+
+
+  // function smoking(element){
+  //   if(fire.style.top === air.style.top || fire.style.left === air.style.left){
+  //       let smoke = document.getElementById("smoke");
+  //       smoke.style.display = "flex";
+        
+  //       contain.appendChild(smoke);
+  //       contain.style.position ="absolute";
+  //     } 
+      
+  //  
+  //   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  //add dragging to combined elements
 const moveMixture = function(mixture){
   const mixtures = document.querySelectorAll(".mixture");
  
@@ -73,47 +115,3 @@ const moveMixture = function(mixture){
   }
 }
 
-
-
-  function exit(){
-    alert.style.display ="none";
-  }
-
-  function waterMix(){
-    //create steam when water and fire are combined
-    if(fire.style.top === water.style.top || fire.style.left === water.style.left){
-      let steam = document.getElementById("steam");
-      steam.style.display = "flex";
-      let contain = document.getElementById("container");
-      contain.appendChild(steam);
-      contain.style.position ="absolute";
-    }
-    if(fire.style.top === earth.style.top || fire.style.left === earth.style.left ){
-      let lava = document.getElementById("lava");
-      lava.style.display = "flex";
-      let contain = document.getElementById("container");
-      contain.appendChild(lava);
-      contain.style.position ="absolute";
-    }
-  }
-
-  function earthMix(){
-    if(fire.style.top === air.style.top || fire.style.left === air.style.left){
-        let smoke = document.getElementById("smoke");
-        smoke.style.display = "flex";
-        let contain = document.getElementById("container");
-        contain.appendChild(smoke);
-        contain.style.position ="absolute";
-      } 
-      
-    if(mud.style.top === fire.style.top || mud.style.left === fire.style.left){
-        let brick = document.getElementById("brick");
-        brick.style.display = "flex";
-        let contain = document.getElementById("container");
-        contain.appendChild(brick);
-        contain.style.position ="absolute";
-      }
-    }
-  
-  
-  
