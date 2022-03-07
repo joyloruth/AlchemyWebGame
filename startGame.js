@@ -137,10 +137,21 @@ let darkModeButton = document.querySelector("#dark");
 darkModeButton.addEventListener("click", function(){
   resetButton.style.backgroundColor = "";
   rulesButton.style.backgroundColor = "";
+  rulesButton.style.color = "";
   cheatSheetButton.style.backgroundColor = "";
+  cheatSheetButton.style.color = "";
   rulesButton.style.backgroundColor = "";
   darkModeButton.style.backgroundColor = "";
-  lightModeButton.style.backgroundColor = "#04ff8a";
+  lightModeButton.style.backgroundColor = "";
+  hintSpace.style.backgroundColor = "";
+
+  resetButton.style.border = "";
+  rulesButton.style.border = "";
+  cheatSheetButton.style.border = "";
+
+  resetButton.style.boxShadow = "";
+  rulesButton.style.boxShadow = "";
+  cheatSheetButton.style.boxShadow = "";
 });
 
 let lightModeButton = document.querySelector("#light");
@@ -148,11 +159,24 @@ lightModeButton.addEventListener("click", function(){
   resetButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
   rulesButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
   cheatSheetButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
-  rulesButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
-  darkModeButton.style.backgroundColor = "#04ff8a";
+
+  resetButton.style.color = "white";
+  rulesButton.style.color = "white";
+  cheatSheetButton.style.color = "white";
+  
+  resetButton.style.border = "black 2px solid";
+  rulesButton.style.border = "black 2px solid";
+  cheatSheetButton.style.border = "black 2px solid";
+  
+  darkModeButton.style.backgroundColor = "#a7f020";
   lightModeButton.style.backgroundColor = "black";
-  darkModeButton.style.width = "35%";
-  lightModeButton.style.width = "15%";
+  hintSpace.style.backgroundColor = "#191a18af";
+  darkModeButton.style.width = "45%";
+  lightModeButton.style.width = "105%";
+
+  resetButton.style.boxShadow = "black 0px 5px 0px";
+  rulesButton.style.boxShadow = "black 0px 5px 0px";
+  cheatSheetButton.style.boxShadow = "black 0px 5px 0px";
 });
 
 
