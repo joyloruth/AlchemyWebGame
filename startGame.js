@@ -31,16 +31,14 @@ const move = function(element){
           smoke.style.opacity = 100;
           container.appendChild(smoke);
           container.style.position ="absolute";
-          
         }
         if(water.style.top == earth.style.top || earth.style.left == water.style.left){
           let mud = document.getElementById("mud");
           mud.style.opacity = 100;
           container.appendChild(mud);
           container.style.position ="absolute";
-          
         }
-        if(mud.style.top == fire.style.top || mud.style.left ==fire.style.left){
+        if(mud.style.top == fire.style.top || mud.style.left == fire.style.left ||  fire.style.left == mud.style.left){
           let brick = document.getElementById("brick");
           brick.style.opacity = 100;
           container.appendChild(brick);
@@ -104,7 +102,7 @@ const moveMixture = function(mixture){
 }
 
 
-let hintButton = document.querySelector("#hintButton");
+let hintButton = document.querySelector("#cheatSheetButton");
 hintButton.addEventListener("click", function(){
   let hintPage = document.getElementById("hintPage");
   hintPage.style.display = "flex";
@@ -134,4 +132,47 @@ let resetButton = document.querySelector("#resetButton");
 resetButton.addEventListener("click", function(){
   location.reload();
 });
+
+let darkModeButton = document.querySelector("#dark");
+darkModeButton.addEventListener("click", function(){
+  resetButton.style.backgroundColor = "";
+  rulesButton.style.backgroundColor = "";
+  cheatSheetButton.style.backgroundColor = "";
+  rulesButton.style.backgroundColor = "";
+  darkModeButton.style.backgroundColor = "";
+  lightModeButton.style.backgroundColor = "#04ff8a";
+});
+
+let lightModeButton = document.querySelector("#light");
+lightModeButton.addEventListener("click", function(){
+  resetButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
+  rulesButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
+  cheatSheetButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
+  rulesButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
+  darkModeButton.style.backgroundColor = "#04ff8a";
+  lightModeButton.style.backgroundColor = "black";
+  darkModeButton.style.width = "35%";
+  lightModeButton.style.width = "15%";
+});
+
+
+
+
+let scorePoints = 50;
+
+
+let scoreBoard = document.querySelector("#scoreBoard");
+
+scoreBoard.addEventListener("click", function(){
+  scorePoints = scorePoints + 1;
+})
+
+prompt(scorePoints);
+
+let clues = [
+  [ fire.png + "+" + air.png],
+  [water.png + "+" + air.png],
+  [  mud.png + "+" + fire.png],
+
+];
 

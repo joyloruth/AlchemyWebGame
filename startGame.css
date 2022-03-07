@@ -23,8 +23,12 @@
   font-size:larger;
   font-weight: 800;
   box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
-  border: #272529bd solid 1px;
-  color: #11191f;
+  border: #272529bd solid 2px;
+  color: black;
+}
+.primaryElement:hover{
+  text-transform: uppercase;
+  background-color: rgba(247, 242, 253, 0.815);
 }
 
 
@@ -34,34 +38,35 @@
   background-image: linear-gradient( #530ef5, rgb(128, 47, 233));
   width: 125px;
   box-shadow: #2F4858 3px 3px 3px;
-  border: #191a18 1px solid;
+  border-right: #191a18 2px solid;
   height: auto;
   animation: backgroundColorChanger 5s alternate infinite ease-in-out;
-
+  
 }
 
-#hintButton{
+#cheatSheetButton{
   width: 75px;
   height: 75px;
   top: 20px;
   background-color: #5eb100bb;
   border-radius: 3px;
   font-family: amatic sc;
-  font-size: 30px;
+  font-size: 25px;
   opacity: 80%;
-  color: #191a18;
-  box-shadow: rgba(44, 82, 35, 0.733) 0px 5px 0px;
-  border: #1a28319f 1px solid;
+  color: black;
+  box-shadow: #376601e0 0px 5px 0px;
+  border: #1a28319f 2.5px solid;
 }
 
-#hintButton:hover{
+#cheatSheetButton:hover{
   box-shadow: #1a2831 0px 3px 2px;
   transition: all .5s ease-in-out ;
-  color: #121311;
+  color: black;
   padding: 2px;
   font-weight: 800;
-  background-color: #168070;
+  background-color: #4b8b02e0;
   zoom: 105%;
+  text-transform: uppercase;
 }
 
 #rulesButton{
@@ -75,17 +80,19 @@
   opacity: 80%;
   color: #191a18;
   box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: #1a28319f 1px solid;
+  border: #1a28319f 2px solid;
   margin: 25px;
+  text-transform: capitalize;
 }
 #rulesButton:hover{
   box-shadow: #1a2831 0px 3px 2px;
-  transition: all .5s ease-in-out ;
+  transition: all .25s ease-in-out ;
   color: #121311;
   padding: 2px;
   font-weight: 800;
-  background-color: #6ec40c;
-  zoom: 105%;
+  background-color: #7e9b0b;
+  
+  text-transform: uppercase;
 }
 
 #resetButton{
@@ -95,16 +102,23 @@
   background-color: #74aa40;
   border-radius: 3px;
   font-family: amatic sc;
-  font-size: 30px;
+  font-size: 25px;
   opacity: 80%;
-  color: #191a18;
+  color: black;
   box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: #1a28319f 1px solid;
+  border: #1a28319f 2px solid;
   margin: 25px;
 }
 #resetButton:hover{
-  zoom:105%;
-  background-color: #00D270;
+  box-shadow: #1a2831 0px 3px 2px;
+  transition: all .25s ease-in-out ;
+  color: #121311;
+  padding: 2px;
+  background-color: #537a2e;
+  font-weight: 800;
+  
+  text-transform: uppercase;
+  
 }
 #hintSpace{
   background-image: linear-gradient( #a7f020, rgb(176, 241, 90));
@@ -118,7 +132,8 @@
   box-shadow: #121311 3px 5px 3px;
   display: flex;
   flex-direction: column;
-  border: #201f1fde 1px solid;
+  border-left: #201f1fad 1.5px solid;
+
 }
 
 .mixture{
@@ -134,12 +149,16 @@
   text-transform: capitalize;
   border-radius: 5px;
   font-size:larger;
-  font-weight: 600;
+  font-weight: 800;
   box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
-  border: #272529bd solid 1px;
-  color: #2F4858;
+  border: #272529bd solid 2px;
+  color: black;
   animation: pop .5s ease-in-out;
+}
 
+.mixture:hover{
+  text-transform: uppercase;
+  background-color: rgba(247, 242, 253, 0.815);
 }
 
 #rulesPage{
@@ -159,6 +178,7 @@
   right:30%;
   border: #191a18 1px solid;
   padding: 10px;
+  
 }
 
 #hintPage{
@@ -315,7 +335,6 @@
 
 
 #gameSpace{
-  
   background-image: linear-gradient( #04ff8a, rgb(131, 138, 233));
   display: flex;
   flex-direction: row;
@@ -325,7 +344,6 @@
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: center;
-  
 } 
 
 @keyframes pop {
@@ -351,4 +369,67 @@
    50% {background-image: linear-gradient( #530ef5, rgb(149, 47, 233));}
    25% {background-image: linear-gradient( #530ef5, rgb(149, 47, 233));}
     0% {background-image: linear-gradient( #58018a, rgb(135, 43, 158));}
+}
+
+
+#scoreBoard{
+  width: 200px;
+  height: 75px;
+  background-color: #04ff8a;
+  margin: 5px;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: poppins;
+  border: #191a18 px solid;
+  position: absolute;
+  right: 50%;
+}
+
+
+/* Mode Buttons ** switches from light to dark or reverse */
+#modeButtonContainer{
+  background-color: #bfccd48f;
+  border: #191a188e px solid;
+  border-radius: 3px;
+  width: 90px;
+  height: auto;
+  display: flex;
+  padding: 1.5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modeButton{
+  padding: 8px;
+  border: #191a188e 2px solid;
+  border-radius: 3px;
+  font-family: amatic sc;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #04ff8a;
+}
+
+#dark{
+border-right: #191a1800 2px solid;
+background-color: rgb(0, 0, 0);
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+width: 15%;
+}
+
+#light{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 35%;
+  }
+
+#lightbulb{
+  width: 25px;
 }
