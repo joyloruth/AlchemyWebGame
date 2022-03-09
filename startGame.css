@@ -48,14 +48,14 @@
   width: 75px;
   height: 75px;
   top: 20px;
-  background-color: #5eb100bb;
+  background-color: #74aa40;
   border-radius: 3px;
   font-family: amatic sc;
   font-size: 25px;
   opacity: 80%;
   color: black;
-  box-shadow: #376601e0 0px 5px 0px;
-  border: #1a28319f 2.5px solid;
+  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
+  border: rgba(61, 99, 17, 0.856) 2px solid;
 }
 
 #cheatSheetButton:hover{
@@ -73,16 +73,15 @@
   width: 75px;
   height: 75px;
   top: 20px;
-  background-color: #9cc00e;
+  background-color: #74aa40;
   border-radius: 3px;
   font-family: amatic sc;
-  font-size: 30px;
+  font-size: 25px;
   opacity: 80%;
-  color: #191a18;
+  color: black;
   box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: #1a28319f 2px solid;
+  border: rgba(61, 99, 17, 0.856) 2px solid;
   margin: 25px;
-  text-transform: capitalize;
 }
 #rulesButton:hover{
   box-shadow: #1a2831 0px 3px 2px;
@@ -393,7 +392,7 @@
 /* Mode Buttons ** switches from light to dark or reverse */
 #modeButtonContainer{
   background-color: #bfccd48f;
-  border: #191a188e px solid;
+  border: rgba(61, 99, 17, 0.856) 2px solid;
   border-radius: 3px;
   width: 90px;
   height: auto;

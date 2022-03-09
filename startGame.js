@@ -137,9 +137,12 @@ let darkModeButton = document.querySelector("#dark");
 darkModeButton.addEventListener("click", function(){
   resetButton.style.backgroundColor = "";
   rulesButton.style.backgroundColor = "";
-  rulesButton.style.color = "";
   cheatSheetButton.style.backgroundColor = "";
+  
+  rulesButton.style.color = "";
   cheatSheetButton.style.color = "";
+  resetButton.style.color = "";
+
   rulesButton.style.backgroundColor = "";
   darkModeButton.style.backgroundColor = "";
   lightModeButton.style.backgroundColor = "";
@@ -171,8 +174,8 @@ lightModeButton.addEventListener("click", function(){
   darkModeButton.style.backgroundColor = "#a7f020";
   lightModeButton.style.backgroundColor = "black";
   hintSpace.style.backgroundColor = "#191a18af";
-  darkModeButton.style.width = "45%";
-  lightModeButton.style.width = "105%";
+  darkModeButton.style.width = "35%";
+  lightModeButton.style.width = "15%";
 
   resetButton.style.boxShadow = "black 0px 5px 0px";
   rulesButton.style.boxShadow = "black 0px 5px 0px";
