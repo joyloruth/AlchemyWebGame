@@ -5,7 +5,6 @@
 
 *{
   margin: 0;
-  
 }
 
 .primaryElement{
@@ -33,15 +32,13 @@
 
 
 #elementSpace {
-  /*background: linear-gradient(90deg, #00D270 10%, #00B195 0);
-  */
-  background-image: linear-gradient( #530ef5, rgb(128, 47, 233));
   width: 125px;
   box-shadow: #2F4858 3px 3px 3px;
   border-right: #191a18 2px solid;
-  height: auto;
-  animation: backgroundColorChanger 5s alternate infinite ease-in-out;
-  
+  height: 100%;
+  background-color: blueviolet;
+  /*animation: backgroundColorChanger 5s alternate infinite ease-in-out;
+  */
 }
 
 #cheatSheetButton{
@@ -122,7 +119,7 @@
 #hintSpace{
   /* background-image: linear-gradient( #a7f020, rgb(176, 241, 90)); */
   height: 100%;
-  width: 100px;
+  width: 110px;
   right: 0px;
   position: fixed;
   display: flex;
@@ -176,9 +173,9 @@
   position: absolute;
   top:25%;
   right:30%;
-  border: #191a18 1px solid;
+  border: #191a18 1.5px solid;
   padding: 10px;
-  
+  box-shadow: rgba(5, 5, 5, 0.856) 0px 5px 0px;
 }
 
 #hintPage{
@@ -372,34 +369,16 @@
 }
 
 
-#scoreBoard{
-  width: 200px;
-  height: 75px;
-  background-color: #04ff8a;
-  margin: 5px;
-  border-radius: 5px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  font-family: poppins;
-  border: #191a18 px solid;
-  position: absolute;
-  right: 50%;
-}
-
-
 /* Mode Buttons ** switches from light to dark or reverse */
 #modeButtonContainer{
-  background-color: #bfccd48f;
+  background-color: rgb(216, 231, 188);
   border: rgba(61, 99, 17, 0.856) 2px solid;
-  border-radius: 3px;
-  width: 90px;
-  height: auto;
+  border-radius: 30px;
+  width: 95px;
   display: flex;
-  padding: 1.5px;
   align-items: center;
   justify-content: center;
+  height: 30px;
 }
 
 .modeButton{
@@ -408,30 +387,58 @@
   border-radius: 3px;
   font-family: amatic sc;
   font-size: 30px;
-  width: 20px;
-  height: 20px;
+  width: auto;
+  height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #c0f10e;
+  background-color: #a7f020;
 }
 
 #dark{
 border-right: #191a1800 2px solid;
-background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.068);
 border-top-right-radius: 0px;
 border-bottom-right-radius: 0px;
-width: 15%;
+width: 50%;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+
+border: none;
 }
 
 #light{
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  width: 35%;
-  transition: all .5s alternate
-   ;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 30%;
+  transition: all .5s alternate;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+   
   }
 
 #lightbulb{
-  width: 25px;
+  width: 20px;
+  padding: 1px;
+}
+
+
+@media screen and (max-width: 900px) {
+  #rulesPage {
+  background-color: #e1e8ec;
+  width: 400px;
+  height: auto;
+  box-shadow: #191a184b 3px 3px 3px;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: amatic sc;
+  flex-direction: column;
+  position: absolute;
+  border: #191a18 1px solid;
+  padding: 10px;
+  z-index: 7;
+  }
 }
