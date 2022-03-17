@@ -1,0 +1,230 @@
+#settingsSpace{
+  height: 100%;
+  width: 110px;
+  right: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  box-shadow: #121311 3px 5px 3px;
+  display: flex;
+  flex-direction: column;
+  border-left: #201f1fad 1.5px solid;
+  background-color: #a7f020;
+}
+.settingsSpaceButton{
+  width: 75px;
+  height: 75px;
+  top: 20px;
+  background-color: #74aa40;
+  border-radius: 3px;
+  font-family: amatic sc;
+  font-size: 25px;
+  opacity: 80%;
+  color: black;
+  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
+  border: rgba(61, 99, 17, 0.856) 2px solid;
+  margin: 10px;
+}
+.settingsSpaceButton:hover{
+  box-shadow: #1a2831 0px 3px 2px;
+  transition: all .5s ease-in-out ;
+  color: black;
+  padding: 2px;
+  font-weight: 800;
+  background-color: rgba(247, 242, 253, 0.637);
+  zoom: 101%;
+  text-transform: uppercase;
+}
+
+/*LIGHT/DARK MODE --- switch that changes theme*/
+#modeButtonContainer{
+  background-color: rgb(216, 231, 188);
+  border: rgba(61, 99, 17, 0.856) 2px solid;
+  border-radius: 30px;
+  width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.modeButton{
+  padding: 8px;
+  border: #191a188e 2px solid;
+  border-radius: 3px;
+  font-family: amatic sc;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #6dabcf;
+  
+}
+#lightMode{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 30%;
+  transition: all .5s alternate;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: rgba(5, 5, 5, 0.521) 0px 1px 0px;
+}
+#lightMode:hover{
+  background-color: #5e90ad;
+}
+#darkMode{
+  border-right: #191a1800 2px solid;
+  background-color: rgba(0, 0, 0, 0.068);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 50%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
+}
+#lightbulb{
+  width: 20px;
+  padding: 1px;
+}
+    
+
+/*RULE PAGE --- displays RULES for the game*/
+#rulesPage{
+  background-color: #e1e8ec;
+  width: 450px;
+  height: auto;
+  box-shadow: #191a184b 3px 3px 3px;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: amatic sc;
+  flex-direction: column;
+  position: absolute;
+  top:25%;
+  right:30%;
+  border: #191a18 1.5px solid;
+  padding: 10px;
+  box-shadow: rgba(5, 5, 5, 0.856) 0px 5px 0px;
+}
+#rulesExitButton{
+  border-radius: 5px;
+  border: #191a18 1.5px solid;
+  font-family: amatic sc;
+  background-color: #b1f05f;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: 800;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: center;
+  border: none;
+}
+#rulesExitButton p {
+  transform: rotate(40deg);
+  font-size: 50px;
+  font-family: amatic sc;
+}
+#rulesExitButton:hover{
+  color:white;
+}
+#rulesExitButton p:hover{
+  transform: rotate(90deg);
+  transition: all .1s ease-in-out;
+}
+
+
+/*CHEAT SHEET PAGE --- displays hints for the game*/
+#cheatSheetPage{
+  background: inherit;
+  background-color: #e1e8ec;
+  width: 450px;
+  height: auto;
+  box-shadow: #191a184b 3px 3px 3px;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: amatic sc;
+  flex-direction: column;
+  position: absolute;
+  top:25%;
+  right:30%;
+  border: #1b202096 2px solid;
+  padding: 10px;
+  box-shadow: rgba(5, 5, 5, 0.644) 0px 5px 0px;
+}
+/* #cheatSheetPage:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  background: inherit;
+} */
+
+#cheatSheetPage p{
+  font-family: poppins;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+#cheatSheetExitButton{
+  border-radius: 5px;
+  border: #191a18 1.5px solid;
+  font-family: amatic sc;
+  background-color: #b1f05f;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: 800;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: center;
+  border: none;
+}
+#cheatSheetExitButton p {
+  transform: rotate(40deg);
+  font-size: 50px;
+  font-family: amatic sc;
+}
+#cheatSheetExitButton:hover{
+  color:white;
+}
+#cheatSheetExitButton p:hover{
+  transform: rotate(90deg);
+  transition: all .1s ease-in-out;
+}
+
+/*FAVICON*/
+#favicon{
+  width: 75px;
+  height: 75px;
+  margin: 30px;
+  animation: rotateFavicon 5s ease-in alternate infinite;
+}
+
+@keyframes rotateFavicon{
+  100%{
+    transform: rotate(30deg);
+    opacity: 30%;
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+}

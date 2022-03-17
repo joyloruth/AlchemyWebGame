@@ -7,6 +7,7 @@
   <title>Alchemy</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel = "stylesheet" href = "startGame.css">
+  <link rel = "stylesheet" href = "settingsSpace.css">
 </head>
 <body onload="move('element'); moveMixture('mixture')">
   
@@ -33,7 +34,7 @@
       <!-- <div id="scoreBoard"></div> -->
       
       <div id="rulesPage">
-        <button id = "exitRulesButton">X</button>
+        <button id = "rulesExitButton"><p>+</p></button>
         <br></br>
         <h1>Objective</h1>
        
@@ -42,8 +43,8 @@
         <br></br>
         <p><b>IMPORTANT:</b> Drag and place square directly over the other square that you are wishing to combine.  </p>
       </div>
-      <div id="hintPage">
-        <button id = "exitHintButton">X</button>
+      <div id="cheatSheetPage">
+        <button id = "cheatSheetExitButton"><p>+</p></button>
         <br></br>
         <h1>Cheat Sheet</h1>
         <p><b>Got Stuck?</b></p>
@@ -65,20 +66,20 @@
         <p>More hints to be listed soon!</p>
       </div>
      
-      <div id="hintSpace">
+      <div id="settingsSpace">
+         <img src = "images/purplefavicon.png" id="favicon">
         <button id = "modeButtonContainer">
           <img src="images/lightbulboff.png" id="lightbulb">
-          <div class="modeButton" id="dark">
-            
+          <div class="modeButton" id="darkMode">
           </div>
-          <div class="modeButton" id="light">
-            
+          <div class="modeButton" id="lightMode">
           </div>
           <img src="images/lightbulbon.png"  id="lightbulb">
         </button>
-        <button id = "rulesButton">Rules</button>
-        <button id = "cheatSheetButton">Cheat Sheet</button>
-        <button id = "resetButton">Reset Game</button>
+
+        <button id = "rulesButton" class = "settingsSpaceButton">Rules</button>
+        <button id = "cheatSheetButton" class = "settingsSpaceButton">Cheat Sheet</button>
+        <button id = "resetButton" class = "settingsSpaceButton">Reset Game</button>
       </div>
 
     </div>
@@ -88,6 +89,6 @@
 
 
   <script src = "startGame.js"></script>
-  <script src = "hintSpace.js"></script>
+  <script src = "settingsSpace.js"></script>
 </body>
 </html>

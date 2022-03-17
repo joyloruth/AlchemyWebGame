@@ -25,6 +25,7 @@
   border: #272529bd solid 2px;
   color: black;
 }
+
 .primaryElement:hover{
   text-transform: uppercase;
   background-color: rgba(247, 242, 253, 0.815);
@@ -37,99 +38,6 @@
   border-right: #191a18 2px solid;
   height: 100%;
   background-color: blueviolet;
-  /*animation: backgroundColorChanger 5s alternate infinite ease-in-out;
-  */
-}
-
-#cheatSheetButton{
-  width: 75px;
-  height: 75px;
-  top: 20px;
-  background-color: #74aa40;
-  border-radius: 3px;
-  font-family: amatic sc;
-  font-size: 25px;
-  opacity: 80%;
-  color: black;
-  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: rgba(61, 99, 17, 0.856) 2px solid;
-}
-
-#cheatSheetButton:hover{
-  box-shadow: #1a2831 0px 3px 2px;
-  transition: all .5s ease-in-out ;
-  color: black;
-  padding: 2px;
-  font-weight: 800;
-  background-color: #4b8b02e0;
-  zoom: 105%;
-  text-transform: uppercase;
-}
-
-#rulesButton{
-  width: 75px;
-  height: 75px;
-  top: 20px;
-  background-color: #74aa40;
-  border-radius: 3px;
-  font-family: amatic sc;
-  font-size: 25px;
-  opacity: 80%;
-  color: black;
-  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: rgba(61, 99, 17, 0.856) 2px solid;
-  margin: 25px;
-}
-#rulesButton:hover{
-  box-shadow: #1a2831 0px 3px 2px;
-  transition: all .25s ease-in-out ;
-  color: #121311;
-  padding: 2px;
-  font-weight: 800;
-  background-color: #7e9b0b;
-  
-  text-transform: uppercase;
-}
-
-#resetButton{
-  width: 75px;
-  height: 75px;
-  top: 20px;
-  background-color: #74aa40;
-  border-radius: 3px;
-  font-family: amatic sc;
-  font-size: 25px;
-  opacity: 80%;
-  color: black;
-  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: #1a28319f 2px solid;
-  margin: 25px;
-}
-#resetButton:hover{
-  box-shadow: #1a2831 0px 3px 2px;
-  transition: all .25s ease-in-out ;
-  color: #121311;
-  padding: 2px;
-  background-color: #537a2e;
-  font-weight: 800;
-  
-  text-transform: uppercase;
-  
-}
-#hintSpace{
-  /* background-image: linear-gradient( #a7f020, rgb(176, 241, 90)); */
-  height: 100%;
-  width: 110px;
-  right: 0px;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: #121311 3px 5px 3px;
-  display: flex;
-  flex-direction: column;
-  border-left: #201f1fad 1.5px solid;
-  background-color: #a7f020;
   
 }
 
@@ -158,50 +66,10 @@
   background-color: rgba(247, 242, 253, 0.815);
 }
 
-#rulesPage{
-  background-color: #e1e8ec;
-  width: 450px;
-  height: auto;
-  box-shadow: #191a184b 3px 3px 3px;
-  border-radius: 5px;
-  display: none;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  font-family: amatic sc;
-  flex-direction: column;
-  position: absolute;
-  top:25%;
-  right:30%;
-  border: #191a18 1.5px solid;
-  padding: 10px;
-  box-shadow: rgba(5, 5, 5, 0.856) 0px 5px 0px;
-}
 
-#hintPage{
-  background-color: #e1e8ec;
-  width: 450px;
-  height: auto;
-  box-shadow: #191a184b 3px 3px 3px;
-  border-radius: 5px;
-  display: none;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  font-family: amatic sc;
-  flex-direction: column;
-  position: absolute;
-  top:25%;
-  right:30%;
-  border: #191a18 1px solid;
-  padding: 10px;
-  transition: all 4s ease-in-out;
-}
-#hintPage p{
-  font-family: poppins;
-  font-size: 14px;
-  padding-bottom: 5px;
-}
+
+
+
 
 #rulesPage p{
   font-family: poppins;
@@ -209,39 +77,10 @@
   padding-bottom: 5px;
 }
 
-#exitHintButton{
-  border-radius: 5px;
-  border: #191a18 1px solid;
-  font-family: amatic sc;
-  background-color: #b1f05f;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-weight: 800;
-  font-size: large;
-}
 
-#exitHintButton:hover{
-  zoom:105%;
-  background-color: #00D270;
-}
 
-#exitRulesButton{
-  border-radius: 5px;
-  border: #191a18 1px solid;
-  font-family: amatic sc;
-  background-color: #b1f05f;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-weight: 800;
-  font-size: large;
-}
 
-#exitRulesButton:hover{
-  zoom:105%;
-  background-color: #00D270;
-}
+
 
 #hintList{
   display: flex;
@@ -303,7 +142,6 @@
   background-size: 60px;
   background-position: center;
   opacity: 0;
-  
 }
 
 #steam{
@@ -369,58 +207,7 @@
 }
 
 
-/* Mode Buttons ** switches from light to dark or reverse */
-#modeButtonContainer{
-  background-color: rgb(216, 231, 188);
-  border: rgba(61, 99, 17, 0.856) 2px solid;
-  border-radius: 30px;
-  width: 95px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-}
 
-.modeButton{
-  padding: 8px;
-  border: #191a188e 2px solid;
-  border-radius: 3px;
-  font-family: amatic sc;
-  font-size: 30px;
-  width: auto;
-  height: auto;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: #a7f020;
-}
-
-#dark{
-border-right: #191a1800 2px solid;
-background-color: rgba(0, 0, 0, 0.068);
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
-width: 50%;
-border-top-left-radius: 30px;
-border-bottom-left-radius: 30px;
-
-border: none;
-}
-
-#light{
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  width: 30%;
-  transition: all .5s alternate;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-   
-  }
-
-#lightbulb{
-  width: 20px;
-  padding: 1px;
-}
 
 
 @media screen and (max-width: 900px) {
@@ -442,3 +229,4 @@ border: none;
   z-index: 7;
   }
 }
+

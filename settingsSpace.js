@@ -1,14 +1,13 @@
-let hintButton = document.querySelector("#cheatSheetButton");
-hintButton.addEventListener("click", function(){
-  let hintPage = document.getElementById("hintPage");
-  hintPage.style.display = "flex";
+let cheatSheetButton = document.querySelector("#cheatSheetButton");
+cheatSheetButton.addEventListener("click", function(){
+  let cheatSheetPage = document.getElementById("cheatSheetPage");
+  cheatSheetPage.style.display = "flex";
  
 });
 
-let exitHintButton = document.querySelector("#exitHintButton");
-exitHintButton.addEventListener("click", function(){
-  let hintPage = document.getElementById("hintPage");
-  hintPage.style.display = "none";
+let cheatSheetExitButton = document.querySelector("#cheatSheetExitButton");
+cheatSheetExitButton.addEventListener("click", function(){
+  cheatSheetPage.style.display = "none";
 });
 
 let rulesButton = document.querySelector("#rulesButton");
@@ -17,8 +16,8 @@ rulesButton.addEventListener("click", function(){
   rulesPage.style.display = "flex";
 });
 
-let exitRulesButton = document.querySelector("#exitRulesButton");
-exitRulesButton.addEventListener("click", function(){
+let rulesExitButton = document.querySelector("#rulesExitButton");
+rulesExitButton.addEventListener("click", function(){
   let rulesPage = document.getElementById("rulesPage");
   rulesPage.style.display = "none";
 });
@@ -28,35 +27,9 @@ resetButton.addEventListener("click", function(){
   location.reload();
 });
 
-let darkModeButton = document.querySelector("#dark");
+let darkModeButton = document.querySelector("#darkMode");
 darkModeButton.addEventListener("click", function(){
-  /*resetButton.style.backgroundColor = "";
-  rulesButton.style.backgroundColor = "";
-  cheatSheetButton.style.backgroundColor = "";
-  elementSpace.style.backgroundColor = "";
-  
-  rulesButton.style.color = "";
-  cheatSheetButton.style.color = "";
-  resetButton.style.color = "";
 
-  rulesButton.style.backgroundColor = "";
-  darkModeButton.style.backgroundColor = "";
-  lightModeButton.style.backgroundColor = "";
-  hintSpace.style.backgroundColor = "";
-
-  resetButton.style.border = "";
-  rulesButton.style.border = "";
-  cheatSheetButton.style.border = "";
-
-  resetButton.style.boxShadow = "";
-  rulesButton.style.boxShadow = "";
-  cheatSheetButton.style.boxShadow = "";
-
-  lightModeButton.style.borderBottomLeftRadius = "";
-  lightModeButton.style.borderTopLeftRadius = "";
-  lightModeButton.style.border = "";
-
-  darkModeButton.style.border = "";*/
   resetButton.style.backgroundColor = "";
   resetButton.style.color = "";
   resetButton.style.border = "";
@@ -76,20 +49,22 @@ darkModeButton.addEventListener("click", function(){
   lightModeButton.style.border = "";
   lightModeButton.style.borderBottomLeftRadius = "";
   lightModeButton.style.borderTopLeftRadius = "";
-  
+  lightModeButton.style.boxShadow = "";
+
   darkModeButton.style.backgroundColor = "";
   darkModeButton.style.border = "";
   darkModeButton.style.borderRadius = "";
   darkModeButton.style.width = "";
   darkModeButton.style.width = "";
+  darkModeButton.style.boxShadow = "";
   
-  hintSpace.style.backgroundColor = "";
+  settingsSpace.style.backgroundColor = "";
   elementSpace.style.backgroundColor = "";
 
   modeButtonContainer.style.border = "";
 });
 
-let lightModeButton = document.querySelector("#light");
+let lightModeButton = document.querySelector("#lightMode");
 lightModeButton.addEventListener("click", function(){
   resetButton.style.backgroundColor = "rgba(0, 0, 0, 0.527)";
   resetButton.style.color = "white";
@@ -110,14 +85,16 @@ lightModeButton.addEventListener("click", function(){
   lightModeButton.style.border = "none";
   lightModeButton.style.borderBottomLeftRadius = "0%";
   lightModeButton.style.borderTopLeftRadius = "15%";
+  lightModeButton.style.boxShadow = "none";
   
   darkModeButton.style.backgroundColor = "#a7f020";
   darkModeButton.style.border = "#191a18af 2px solid";
   darkModeButton.style.borderRadius = "100%";
   darkModeButton.style.width = "35%";
   darkModeButton.style.width = "35%";
+  darkModeButton.style.boxShadow = "rgba(5, 5, 5, 0.521) 0px 1px 0px";
   
-  hintSpace.style.backgroundColor = "#191a18af";
+  settingsSpace.style.backgroundColor = "#191a18af";
   elementSpace.style.backgroundColor = "#191a18af";
 
   modeButtonContainer.style.border = "black solid 2px";
