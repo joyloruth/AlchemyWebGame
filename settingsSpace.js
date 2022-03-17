@@ -62,6 +62,8 @@ darkModeButton.addEventListener("click", function(){
   elementSpace.style.backgroundColor = "";
 
   modeButtonContainer.style.border = "";
+  modeButtonContainer.style.backgroundColor = "";
+  modeButtonContainer.style.boxShadow = "";
 });
 
 let lightModeButton = document.querySelector("#lightMode");
@@ -92,11 +94,13 @@ lightModeButton.addEventListener("click", function(){
   darkModeButton.style.borderRadius = "100%";
   darkModeButton.style.width = "35%";
   darkModeButton.style.width = "35%";
-  darkModeButton.style.boxShadow = "rgba(5, 5, 5, 0.521) 0px 1px 0px";
+  darkModeButton.style.boxShadow = "black 0px 3px 3px";
   
   settingsSpace.style.backgroundColor = "#191a18af";
   elementSpace.style.backgroundColor = "#191a18af";
 
-  modeButtonContainer.style.border = "black solid 2px";
+  modeButtonContainer.style.border = "darkgrey dotted 2px";
+  modeButtonContainer.style.backgroundColor = "grey";
+  modeButtonContainer.style.boxShadow = "black 0px 3px 3px";
 });
 

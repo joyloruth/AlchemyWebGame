@@ -39,7 +39,7 @@
 
 /*LIGHT/DARK MODE --- switch that changes theme*/
 #modeButtonContainer{
-  background-color: rgb(216, 231, 188);
+  background-color: rgb(220, 240, 185);
   border: rgba(61, 99, 17, 0.856) 2px solid;
   border-radius: 30px;
   width: 95px;
@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: center;
   height: 30px;
+  box-shadow: 0px 3px 3px #46740a;
 }
 .modeButton{
   padding: 8px;
@@ -69,7 +70,7 @@
   transition: all .5s alternate;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  box-shadow: rgba(5, 5, 5, 0.521) 0px 1px 0px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.733);
 }
 #lightMode:hover{
   background-color: #5e90ad;
@@ -110,6 +111,12 @@
   padding: 10px;
   box-shadow: rgba(5, 5, 5, 0.856) 0px 5px 0px;
 }
+#rulesPage p{
+  font-family: poppins;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
 #rulesExitButton{
   border-radius: 5px;
   border: #191a18 1.5px solid;
@@ -163,17 +170,6 @@
   padding: 10px;
   box-shadow: rgba(5, 5, 5, 0.644) 0px 5px 0px;
 }
-/* #cheatSheetPage:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(10px);
-  background: inherit;
-} */
 
 #cheatSheetPage p{
   font-family: poppins;
@@ -210,11 +206,19 @@
   transform: rotate(90deg);
   transition: all .1s ease-in-out;
 }
+#cheatSheetList{
+  display: flex;
+  flex-direction: column;
+}
+#cheatSheetIcon{
+  width:50px;
+  height: 50px;
+}
 
 /*FAVICON*/
 #favicon{
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   margin: 30px;
   animation: rotateFavicon 5s ease-in alternate infinite;
 }
