@@ -41,30 +41,7 @@
   
 }
 
-.mixture{
-  background-color: rgba(247, 242, 253, 0.377);
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-family: Amatic SC;
-  text-transform: capitalize;
-  border-radius: 5px;
-  font-size:larger;
-  font-weight: 800;
-  box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
-  border: #272529bd solid 2px;
-  color: black;
-  animation: pop .5s ease-in-out;
-}
 
-.mixture:hover{
-  text-transform: uppercase;
-  background-color: rgba(247, 242, 253, 0.815);
-}
 
 
 /* primary elements */
@@ -74,7 +51,6 @@
   background-size: 60px;
   background-position: center;
   position: relative;
-
 }
 
 #air{
@@ -101,7 +77,32 @@
   position: relative;
 }
 
-/* secondary elements */
+
+/* COMBINED ELEMENTS*/
+.combinedElement{
+  background-color: rgba(247, 242, 253, 0.377);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Amatic SC;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size:larger;
+  font-weight: 800;
+  box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
+  border: #272529bd solid 2px;
+  color: black;
+  animation: pop .5s ease-in-out;
+}
+.combinedElement:hover{
+  text-transform: uppercase;
+  background-color: rgba(247, 242, 253, 0.815);
+}
+
 #lava{
   background-image: url("images/lava.png");
   background-repeat: no-repeat;
@@ -123,7 +124,6 @@
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
-  opacity: 0;
 }
 
 #smoke{

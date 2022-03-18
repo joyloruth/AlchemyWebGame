@@ -1,7 +1,8 @@
 let chooseElement;
 let chooseMixture;
 let container = document.getElementById("elementSpace");
-
+let a;
+let b;
 
 const move = function(element){
   const elements = document.querySelectorAll(".primaryElement");
@@ -19,26 +20,57 @@ const move = function(element){
         chooseElement.style.left = x + "px";
         chooseElement.style.top  = y + "px";
 
-        
+        let STEAMY = fire.style.top == water.style.top || fire.style.left == water.style.left;
+        let SMOKY = fire.style.top == air.style.top || fire.style.left == air.style.left;
 
+        switch(chooseElement.style.top == chooseElement.style.top || chooseElement.style.left == chooseElement.style.left) {
+          case STEAMY:
+            let steam = document.createElement("DIV");
+            steam.innerText="steam";
+            steam.className="combinedElement";
+            container.appendChild(steam);
+            moveMixture(steam);
+            break;
+          case SMOKY:
+            let smoke = document.createElement("DIV");
+            smoke.innerText="smoke";
+            smoke.className="combinedElement";
+            container.appendChild(smoke);
+            moveMixture(smoke);
+            break;
+          default:
+            
+        }
+
+        /*
         if(fire.style.top == water.style.top || fire.style.left == water.style.left){
-          let steamy = document.getElementById("steam");
-          steamy.style.opacity = 100;
-          container.appendChild(steamy);
-          container.style.position ="absolute";
-          
+          // let steamy = document.getElementById("steam");
+          // steamy.style.opacity = 100;
+          // container.appendChild(steamy);
+
+          let steam = document.createElement("DIV");
+          steam.innerText="steam";
+          steam.className="combinedElement";
+          container.appendChild(steam);
+          moveMixture(steam);
         }
+
         if(fire.style.top == air.style.top || fire.style.left == air.style.left){
-          let smoke = document.getElementById("smoke");
-          smoke.style.opacity = 100;
+          let smoke = document.createElement("DIV");
+          smoke.innerText="smoke";
+          smoke.className="combinedElement";
           container.appendChild(smoke);
-          container.style.position ="absolute";
+          moveMixture(smoke);
+          if(smoke==true){
+            container.removeChild(smoke);
+          }
         }
-        /*if(water.style.top == earth.style.top || earth.style.left == water.style.left){
-          let mud = document.getElementById("mud");
-          mud.style.opacity = 100;
+        if(water.style.top === earth.style.top || earth.style.left == water.style.left){
+          let mud = document.createElement("DIV");
+          mud.innerText="mud";
+          mud.className="combinedElement";
           container.appendChild(mud);
-          container.style.position ="absolute";
+          moveMixture(mud);
         }
         if(mud.style.top == fire.style.top || mud.style.left == fire.style.left ||  fire.style.left == mud.style.left){
           let brick = document.getElementById("brick");
@@ -46,14 +78,12 @@ const move = function(element){
           container.appendChild(brick);
           container.style.position ="absolute";
         }
-        if(fire.style.top === earth.style.top || fire.style.left === earth.style.left ){
+        if(fire.style.top == earth.style.top || fire.style.left == earth.style.left ){
           let lava = document.getElementById("lava");
           lava.style.opacity = 100;
           container.appendChild(lava);
           container.style.position ="absolute";
         }*/
-
-        
       }
     })
   })
@@ -63,24 +93,9 @@ const move = function(element){
     }
 }
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
   //add dragging to combined elements
 const moveMixture = function(mixture){
-  const mixtures = document.querySelectorAll(".mixture");
+  const mixtures = document.querySelectorAll(".combinedElement");
  
   mixtures.forEach(mixture => {
     mixture.addEventListener("mousedown", () => {
@@ -102,26 +117,4 @@ const moveMixture = function(mixture){
     chooseElement=null;
   }
 }
-
-
-
-
-
-
-
-
-let scoreBoard = document.querySelector("#scoreBoard");
-
-scoreBoard.addEventListener("click", function(){
-  scorePoints = scorePoints + 1;
-})
-
-prompt(scorePoints);
-
-let clues = [
-  [ fire.png + "+" + air.png],
-  [water.png + "+" + air.png],
-  [  mud.png + "+" + fire.png],
-
-];
 

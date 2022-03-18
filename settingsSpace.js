@@ -27,6 +27,8 @@ resetButton.addEventListener("click", function(){
   location.reload();
 });
 
+let primaryElements = document.querySelectorAll(".primaryElement");
+
 let darkModeButton = document.querySelector("#darkMode");
 darkModeButton.addEventListener("click", function(){
 
@@ -57,13 +59,19 @@ darkModeButton.addEventListener("click", function(){
   darkModeButton.style.width = "";
   darkModeButton.style.width = "";
   darkModeButton.style.boxShadow = "";
-  
-  settingsSpace.style.backgroundColor = "";
-  elementSpace.style.backgroundColor = "";
-
+ 
   modeButtonContainer.style.border = "";
   modeButtonContainer.style.backgroundColor = "";
   modeButtonContainer.style.boxShadow = "";
+
+  settingsSpace.style.backgroundColor = "";
+  elementSpace.style.backgroundColor = "";
+
+  primaryElements.forEach(ele =>{
+    ele.style.backgroundColor="";
+    ele.style.color="";
+    ele.style.boxShadow = "";
+  })
 });
 
 let lightModeButton = document.querySelector("#lightMode");
@@ -95,12 +103,21 @@ lightModeButton.addEventListener("click", function(){
   darkModeButton.style.width = "35%";
   darkModeButton.style.width = "35%";
   darkModeButton.style.boxShadow = "black 0px 3px 3px";
-  
-  settingsSpace.style.backgroundColor = "#191a18af";
-  elementSpace.style.backgroundColor = "#191a18af";
-
+ 
   modeButtonContainer.style.border = "darkgrey dotted 2px";
   modeButtonContainer.style.backgroundColor = "grey";
   modeButtonContainer.style.boxShadow = "black 0px 3px 3px";
+
+  settingsSpace.style.backgroundColor = "#191a18af";
+  elementSpace.style.backgroundColor = "#191a18af";
+
+  
+  primaryElements.forEach(ele =>{
+    ele.style.backgroundColor="rgba(0, 0, 0, 0.327)";
+    ele.style.color="white";
+    ele.style.boxShadow = "black 0px 5px 0px";
+  })
+
+
 });
 

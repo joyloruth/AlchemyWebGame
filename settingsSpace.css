@@ -220,15 +220,17 @@
   width: 60px;
   height: 60px;
   margin: 30px;
-  animation: rotateFavicon 5s ease-in alternate infinite;
+  animation: rotateFavicon 5s ease-in alternate-reverse infinite;
 }
 
 @keyframes rotateFavicon{
   100%{
-    transform: rotate(30deg);
-    opacity: 30%;
+    transform: rotate(360deg);
+    transform: rotateX(300deg);
   }
   50%{
+    /* transform: rotateX(-300deg); */
     transform: rotateY(180deg);
+    
   }
 }
