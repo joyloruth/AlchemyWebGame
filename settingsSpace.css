@@ -6,48 +6,48 @@
   display: flex;
   align-items: center;
   padding-top: 40px;
-  box-shadow: #121311 3px 5px 3px;
+  box-shadow: #0f0f0ef8 -2px -3px 7px;
   display: flex;
   flex-direction: column;
   border-left: #201f1fad 1.5px solid;
-  background-color: #a7f020;
+  background-color: blueviolet;
 }
 .settingsSpaceButton{
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   top: 20px;
-  background-color: #74aa40;
-  border-radius: 3px;
+  background-color: #d6c3f38c;
+  border-radius: 5px;
   font-family: amatic sc;
   font-size: 25px;
   opacity: 80%;
   color: black;
-  box-shadow: rgba(61, 99, 17, 0.856) 0px 5px 0px;
-  border: rgba(61, 99, 17, 0.856) 2px solid;
+  box-shadow: rgba(53, 17, 99, 0.856) 0px 5px 0px;
+  border: rgba(35, 11, 75, 0.856) 2px solid;
   margin: 10px;
 }
 .settingsSpaceButton:hover{
-  box-shadow: #1a2831 0px 3px 2px;
-  transition: all .5s ease-in-out ;
+ 
+  transition: all .1s ease-in-out ;
   color: black;
-  padding: 2px;
-  font-weight: 800;
-  background-color: rgba(247, 242, 253, 0.637);
+  padding: 0px;
+  background-color: rgba(247, 242, 253, 0.192);
   zoom: 101%;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /*LIGHT/DARK MODE --- switch that changes theme*/
 #modeButtonContainer{
-  background-color: rgb(220, 240, 185);
-  border: rgba(61, 99, 17, 0.856) 2px solid;
+  background-color: rgb(232, 210, 241);
+  border: rgba(56, 10, 83, 0.856) 2px solid;
   border-radius: 30px;
   width: 95px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30px;
-  box-shadow: 0px 3px 3px #46740a;
+  box-shadow: 0px 3px 3px #29043a;
 }
 .modeButton{
   padding: 8px;
@@ -61,7 +61,6 @@
   display: flex;
   justify-content: center;
   background-color: #6dabcf;
-  
 }
 #lightMode{
   border-top-left-radius: 30px;
@@ -74,6 +73,7 @@
 }
 #lightMode:hover{
   background-color: #5e90ad;
+  cursor: pointer;
 }
 #darkMode{
   border-right: #191a1800 2px solid;
@@ -95,7 +95,7 @@
 #rulesPage{
   background-color: #e1e8ec;
   width: 450px;
-  height: auto;
+  height: 350px;
   box-shadow: #191a184b 3px 3px 3px;
   border-radius: 5px;
   display: none;
@@ -232,5 +232,15 @@
     /* transform: rotateX(-300deg); */
     transform: rotateY(180deg);
     
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #rulesPage {
+      position: absolute;
+      left: 100px;
+      right: 100px;
+      z-index: 9;
   }
 }

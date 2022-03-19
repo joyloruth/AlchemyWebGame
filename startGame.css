@@ -24,6 +24,7 @@
   box-shadow: rgba(42, 38, 48, 0.336) 0px 5px 0px;
   border: #272529bd solid 2px;
   color: black;
+  cursor: pointer;
 }
 
 .primaryElement:hover{
@@ -38,6 +39,8 @@
   border-right: #191a18 2px solid;
   height: 100%;
   background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -97,6 +100,7 @@
   border: #272529bd solid 2px;
   color: black;
   animation: pop .5s ease-in-out;
+  cursor: pointer;
 }
 .combinedElement:hover{
   text-transform: uppercase;
@@ -177,29 +181,5 @@
    50% {background-image: linear-gradient( #530ef5, rgb(149, 47, 233));}
    25% {background-image: linear-gradient( #530ef5, rgb(149, 47, 233));}
     0% {background-image: linear-gradient( #58018a, rgb(135, 43, 158));}
-}
-
-
-
-
-
-@media screen and (max-width: 900px) {
-  #rulesPage {
-  background-color: #e1e8ec;
-  width: 400px;
-  height: auto;
-  box-shadow: #191a184b 3px 3px 3px;
-  border-radius: 5px;
-  display: none;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  font-family: amatic sc;
-  flex-direction: column;
-  position: absolute;
-  border: #191a18 1px solid;
-  padding: 10px;
-  z-index: 7;
-  }
 }
 
